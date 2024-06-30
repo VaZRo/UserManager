@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Edit User</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Edit User</h1>
+        <form action="/edit/<%= user._id %>" method="post" enctype="multipart/form-data">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" value="<%= user.name %>" required>
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" value="<%= user.phone %>" required>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" value="<%= user.username %>" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="<%= user.email %>" required>
+
+            <label for="avatar">Avatar</label>
+            <input type="file" id="avatar" name="avatar" accept="image/*">
+
+            <button type="submit">Update User</button>
+        </form>
+    </div>
+</body>
+
+</html>
