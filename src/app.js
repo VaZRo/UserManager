@@ -7,7 +7,7 @@ const multer = require('multer');
 const app = express() 
 const PORT = 3000
 // Your connect string to mongo db
-const db = '';
+const db = 'mongodb+srv://tair:123@cluster0.ujpwbzm.mongodb.net/userManager?retryWrites=true&w=majority&appName=Cluster0';
 
 const User = require('./models/user');
 
